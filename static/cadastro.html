@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Criar conta</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>Criar conta</h2>
+      <input type="text" id="regName" placeholder="Nome">
+      <input type="text" id="regEmail" placeholder="Email">
+      <input type="password" id="regPassword" placeholder="Senha">
+      <button id="btnRegister">Cadastrar</button>
+      <div id="regResult" class="result"></div>
+      <p class="link"><a href="/">Já tenho conta</a></p>
+    </div>
+
+    <p class="warning">
+      ⚠️ Aplicação proposital e vulnerável a <strong>SQL Injection / Blind SQL Injection</strong>, usada apenas para fins de estudo.
+    </p>
+  </div>
+
+  <script src="/static/cadastro.js"></script>
+</body>
+</html>

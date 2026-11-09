@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Admin</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="card">
+      <div class="header-row">
+        <h2>Painel Admin</h2>
+        <button id="btnLogout" class="logout-btn">Sair</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Buscar usuário</h2>
+      <input type="text" id="searchName" placeholder="Nome para buscar">
+      <button id="btnSearch">Buscar</button>
+      <div id="searchResult" class="result"></div>
+    </div>
+
+    <div class="card">
+      <h2>Usuários cadastrados</h2>
+      <button id="btnList">Atualizar lista</button>
+      <table id="usersTable">
+        <thead>
+          <tr><th>ID</th><th>Nome</th><th>Email</th><th>Admin</th><th>Ações</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="/static/admin.js"></script>
+</body>
+</html>
